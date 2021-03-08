@@ -42,37 +42,32 @@ class PageDetail extends StatelessWidget {
                   height: 400,
                   margin: EdgeInsets.only(left: 70, right: 70),
                   decoration: BoxDecoration(
-                    //decoration for the outer wrapper
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
-                    //border radius exactly to ClipRRect
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.5), //color of shadow
-                        spreadRadius: 5, //spread radius
-                        blurRadius: 7, // blur radius
-                        offset: Offset(0, 2), // changes position of shadow
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 2),
                       ),
                     ],
                   ),
                   child: ClipRRect(
-                    //to clip overflown positioned containers.
                     borderRadius: BorderRadius.circular(20),
                     child: Container(
                         child: Stack(
                       children: <Widget>[
-                        //Stack helps to overlap widgets
                         Positioned(
-                            //positioned helps to position widget wherever we want.
                             top: 30,
-                            left: -50, //position of the widget
+                            left: -50,
                             child: Container(
                                 height: 180,
                                 width: 250,
                                 decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     color: Colors.deepPurple.withOpacity(
-                                        0.5) //background color with opacity
+                                        0.5)
                                     ))),
                         Positioned(
                             left: 30,
@@ -95,7 +90,7 @@ class PageDetail extends StatelessWidget {
                         Positioned(
                           right: 10,
                           left: 20,
-                          top: 210, //main content container postition.
+                          top: 210,
                           child: Container(
                             alignment: Alignment.center,
                             height: 100,

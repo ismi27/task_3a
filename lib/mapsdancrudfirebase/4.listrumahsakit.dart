@@ -298,7 +298,7 @@ class _HospitalListState extends State<HospitalList> {
       );
     } else {
       return Center(
-        child: Text("No Hospital"),
+        child: Text("No Hospital", ),
       );
     }
   }

@@ -1,10 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
-import 'crudsqflite/list_pegawai.dart';
 import 'mapsdancrudfirebase/2.splashscreen.dart';
-import 'mapsdancrudfirebase/maps.dart';
-import 'mapsdancrudfirebase/test.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,6 +1,5 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-
 import 'model_pegawai.dart';
 
 class DatabaseHelper {
@@ -58,15 +57,11 @@ class DatabaseHelper {
     ]);
     return result.toList();
   }
-
-//Update Pegawai
   Future<int> updatePegawai(ModelPegawai pegawai) async {
     var dbClient = await db;
     return await dbClient.update(tablePegawai, pegawai.toMap(),
         where: "$columId = ?", whereArgs: [pegawai.id]);
   }
-
-//Delete Pegawai
   Future<int> deletePegawai(int id) async {
     var dbClient = await db;
     return await dbClient

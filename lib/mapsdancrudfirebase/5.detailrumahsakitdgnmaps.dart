@@ -1,11 +1,9 @@
 import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '3.homescreen.dart';
 import '8.rumahsakitmaps.dart';
-import 'maps_model.dart';
 
 class HospitalDetail extends StatefulWidget {
   final position;

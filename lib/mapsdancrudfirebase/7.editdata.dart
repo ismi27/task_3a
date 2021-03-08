@@ -119,6 +119,7 @@ class _UpdateHospitalState extends State<UpdateHospital> {
                             return null;
                           },
                           controller: _hospitalnameController,
+                          keyboardType: TextInputType.text,
                           decoration: InputDecoration(
                             labelText: "Hospital Name",
                             focusedBorder: OutlineInputBorder(
@@ -140,6 +141,7 @@ class _UpdateHospitalState extends State<UpdateHospital> {
                             return null;
                           },
                           controller: _latController,
+                          keyboardType: TextInputType.number,
                           decoration: InputDecoration(
                             labelText: "Hospital Latitude",
                             focusedBorder: OutlineInputBorder(
@@ -162,6 +164,7 @@ class _UpdateHospitalState extends State<UpdateHospital> {
                             return null;
                           },
                           controller: _longController,
+                          keyboardType: TextInputType.number,
                           decoration: InputDecoration(
                             labelText: "Hospital Longitude",
                             focusedBorder: OutlineInputBorder(
@@ -184,6 +187,7 @@ class _UpdateHospitalState extends State<UpdateHospital> {
                             return null;
                           },
                           controller: _ratingtotalController,
+                          keyboardType: TextInputType.number,
                           decoration: InputDecoration(
                             labelText: "Rating Total",
                             focusedBorder: OutlineInputBorder(
@@ -205,6 +209,7 @@ class _UpdateHospitalState extends State<UpdateHospital> {
                             return null;
                           },
                           controller: _reviewtotalController,
+                          keyboardType: TextInputType.number,
                           decoration: InputDecoration(
                             labelText: "Review Total",
                             focusedBorder: OutlineInputBorder(
@@ -226,6 +231,7 @@ class _UpdateHospitalState extends State<UpdateHospital> {
                             return null;
                           },
                           controller: _citynameController,
+                          keyboardType: TextInputType.name,
                           decoration: InputDecoration(
                             labelText: "City Name",
                             focusedBorder: OutlineInputBorder(
@@ -247,6 +253,7 @@ class _UpdateHospitalState extends State<UpdateHospital> {
                             return null;
                           },
                           controller: _opentimeController,
+                          keyboardType: TextInputType.number,
                           decoration: InputDecoration(
                             labelText: "Open Time",
                             focusedBorder: OutlineInputBorder(
@@ -298,7 +305,7 @@ class _UpdateHospitalState extends State<UpdateHospital> {
                                 }
                                 ScaffoldMessenger.of(context).showSnackBar(
                                     SnackBar(content: Text('Processing Data')));
-                              };
+                              }
                             }),
                       ],
                     ),

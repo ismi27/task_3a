@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:task_3a/mapsdancrudfirebase/3.homescreen.dart';
-
 import 'db_helper.dart';
 import 'model_pegawai.dart';
 
@@ -117,6 +116,7 @@ class _FormPegawaiState extends State<FormPegawai> {
                             return null;
                           },
                           controller: _firstNameControler,
+                          keyboardType: TextInputType.name,
                           decoration: InputDecoration(
                               labelText: 'First Name',
                               border: OutlineInputBorder(
@@ -131,6 +131,7 @@ class _FormPegawaiState extends State<FormPegawai> {
                             return null;
                           },
                           controller: _lastNameControler,
+                          keyboardType: TextInputType.name,
                           decoration: InputDecoration(
                               labelText: 'Last Name',
                               border: OutlineInputBorder(
@@ -145,6 +146,7 @@ class _FormPegawaiState extends State<FormPegawai> {
                             return null;
                           },
                           controller: _mobileNoControler,
+                          keyboardType: TextInputType.phone,
                           decoration: InputDecoration(
                               labelText: 'Number Phone',
                               border: OutlineInputBorder(
@@ -159,6 +161,7 @@ class _FormPegawaiState extends State<FormPegawai> {
                             return null;
                           },
                           controller: _emailIdControler,
+                          keyboardType: TextInputType.emailAddress,
                           decoration: InputDecoration(
                               labelText: 'Email Address',
                               border: OutlineInputBorder(
@@ -173,6 +176,7 @@ class _FormPegawaiState extends State<FormPegawai> {
                             return null;
                           },
                           controller: _positionControler,
+                          keyboardType: TextInputType.name,
                           decoration: InputDecoration(
                               labelText: 'Position',
                               border: OutlineInputBorder(
@@ -187,6 +191,7 @@ class _FormPegawaiState extends State<FormPegawai> {
                             return null;
                           },
                           controller: _divisionControler,
+                          keyboardType: TextInputType.name,
                           decoration: InputDecoration(
                               labelText: 'Division',
                               border: OutlineInputBorder(
@@ -235,8 +240,8 @@ class _FormPegawaiState extends State<FormPegawai> {
                                     Navigator.pop(context, 'save');
                                   });
                                 }
-//                                ScaffoldMessenger.of(context).showSnackBar(
-//                                    SnackBar(content: Text('Processing Data')));
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(content: Text('Processing Data')));
                               }
                             }),
                       ],
